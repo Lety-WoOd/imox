@@ -34,8 +34,10 @@ where `<variant>` is one of the [package types](https://github.com/opengapps/ope
 
 ```makefile
 GAPPS_VARIANT := stock
-```
 
+#Se puede cambiar stock por una variante mas light (http://opengapps.org/ )
+
+```
 **3. Include the opengapps-packages.mk file**
 
 The `opengapps-packages.mk` file will make the Android build system build the necessary `PRODUCT_PACKAGES`, and include the necessary `PRODUCT_COPY_FILES`.
@@ -44,6 +46,19 @@ In `device/manufacturer/product/device.mk` file, towards the end, add:
 ```makefile
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 ```
+
+**4. Comentar la linea ()**
+cometar la linea ()
+ruta___________________-_______________________________________________
+
+
+
+
+
+
+
+
+
 
 **4. Build Android**
 
