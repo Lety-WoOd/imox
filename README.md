@@ -7,7 +7,7 @@
 ## Getting started
 **1. Add the build system, and the wanted sources to your manifest.**
 
-Find your manifest file (check inside `${ANDROID_BUILD_TOP}/.repo/manifest/`)
+Find your manifest file (check inside `${ANDROID_BUILD_TOP} .repo/manifests/default.xm`)
 and add the following towards the end:
 ```xml
 <remote name="opengapps" fetch="https://github.com/opengapps/"  />
@@ -25,25 +25,25 @@ and add the following towards the end:
 
 **2. Set the desired OpenGapps variant**
 
-In your `device/manufacturer/product/device.mk` file, in the beginning, add:
+En tu `device/manufacturer/product/device.mk` archivo, en el principio, agregar:
 ```makefile
 GAPPS_VARIANT := <variant>
 ```
 
-where `<variant>` is one of the [package types](https://github.com/opengapps/opengapps/wiki/Package-Comparison) in lowercase. E.g:
-
+dónde `<variant>` is one of the [package types](https://github.com/opengapps/opengapps/wiki/Package-Comparison) in lowercase. E.g:
 ```makefile
+
 GAPPS_VARIANT := stock
-
-#Se puede cambiar stock por una variante mas light (http://opengapps.org/ )
-
 ```
+#Se puede cambiar stock por una variante mas light (puedes ver los tamaños en http://opengapps.org/ )
+
 **3. Include the opengapps-packages.mk file**
 
 The `opengapps-packages.mk` file will make the Android build system build the necessary `PRODUCT_PACKAGES`, and include the necessary `PRODUCT_COPY_FILES`.
 
 In `device/manufacturer/product/device.mk` file, towards the end, add:
 ```makefile
+
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 ```
 
@@ -52,7 +52,7 @@ cometar la linea (PRODUCT_RESTRICT_VENDOR_FILES := true)
 
 In `device/manufacture/product/aosp_product.mk`
 
-Not do 
+**Not do**
 
 **4. Build Android**
 
