@@ -48,17 +48,11 @@ $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 ```
 
 **4. Comentar la linea ()**
-cometar la linea ()
-ruta___________________-_______________________________________________
+cometar la linea (PRODUCT_RESTRICT_VENDOR_FILES := true)
 
+In `device/manufacture/product/aosp_product.mk`
 
-
-
-
-
-
-
-
+Not do 
 
 **4. Build Android**
 
