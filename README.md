@@ -52,6 +52,8 @@ cometar la linea (PRODUCT_RESTRICT_VENDOR_FILES := true)
 
 In `device/manufacture/product/aosp_product.mk`
 
+**5. repo sync -f**
+
 **Not do**
 
 **4. Build Android**
