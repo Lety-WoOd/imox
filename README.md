@@ -33,7 +33,7 @@ GAPPS_VARIANT := <variant>
 dónde `<variant>` is one of the [package types](https://github.com/opengapps/opengapps/wiki/Package-Comparison) in lowercase. E.g:
 ```makefile
 
-GAPPS_VARIANT := stock
+GAPPS_VARIANT := mini
 ```
 #Se puede cambiar stock por una variante mas light (puedes ver los tamaños en http://opengapps.org/ )
 
