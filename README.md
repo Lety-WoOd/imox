@@ -34,6 +34,7 @@ dónde `<variant>` is one of the [package types](https://github.com/opengapps/op
 ```makefile
 
 GAPPS_VARIANT := mini
+PRODUCT_PACKAGES += Chrome
 ```
 #Se puede cambiar stock por una variante mas light (puedes ver los tamaños en http://opengapps.org/ )
 
@@ -51,6 +52,7 @@ $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 cometar la linea (PRODUCT_RESTRICT_VENDOR_FILES := true)
 
 In `device/manufacture/product/aosp_product.mk`
+
 ##Hamerhead (https://android.googlesource.com/device/lge/hammerhead/+/master/full_hammerhead.mk#31)
 
 **5. repo sync -f**
